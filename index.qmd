@@ -492,7 +492,7 @@ You can use Python and R code together using the `reticulate` package
 
 
 :::: columns
-::: {.column width="30%"}
+::: {.column width="50%"}
 
 **Fragments**
 
@@ -518,7 +518,7 @@ Slide up while fading in
 
 :::
 
-::: {.column width="30%"}
+::: {.column width="50%"}
 ::: {.panel-tabset}
 ### Tab
 Hello...
