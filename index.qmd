@@ -304,17 +304,17 @@ fig-align="center"}
 ::: columns
 ::: {.column width="30%"}
 ::: {.fragment}
-![[taken from quarto-journals](https://github.com/quarto-journals/)](figures/journal.png)
+![[taken from quarto-journals](https://github.com/quarto-journals/)](images/journal.png)
 :::
 :::
 ::: {.column width="30%"}
 ::: {.fragment}
-![[taken from quarto gallery](https://quarto.org/docs/gallery/)](figures/presentations-penguins-story.png)
+![[taken from quarto gallery](https://quarto.org/docs/gallery/)](images/presentations-penguins-story.png)
 :::
 :::
 ::: {.column width="30%"}
 ::: {.fragment}
-![[taken from quarto gallery](https://quarto.org/docs/gallery/)](figures/books-mlr3book.png)
+![[taken from quarto gallery](https://quarto.org/docs/gallery/)](images/books-mlr3book.png)
 :::
 :::
 :::
@@ -324,26 +324,26 @@ fig-align="center"}
 ## How does Quarto work?
 
 
-![taken from [What is Quarto - A Quick Intro FAQ](https://github.com/jansim/tea-talk-quarto/tree/main)](figures/quarto.png)
+![taken from [What is Quarto - A Quick Intro FAQ](https://github.com/jansim/tea-talk-quarto/tree/main)](images/quarto.png)
 
 ## .qmd
 
-![[qmd file](https://quarto.org/docs/get-started/hello/rstudio.html)](figures/rstudio-hello.png)
+![[qmd file](https://quarto.org/docs/get-started/hello/rstudio.html)](images/rstudio-hello.png)
 
 ## .ipynb
 
-![[jupyter notebook](https://quarto.org/docs/get-started/hello/jupyter.html)](figures/jupyter-quarto-preview.png)
+![[jupyter notebook](https://quarto.org/docs/get-started/hello/jupyter.html)](images/jupyter-quarto-preview.png)
 
 ## Tools
 ::: columns
 ::: {.column width="20%"}
-![](figures/jupyter.svg.png)
-![](figures/vsc.svg.png)
-![](figures/rs.svg.png)
+![](images/jupyter.svg.png)
+![](images/vsc.svg.png)
+![](images/rs.svg.png)
 :::
 ::: {.column width="70%"}
 ::: {.fragment}
-![](figures/text-editor-quarto-preview.png)
+![](images/text-editor-quarto-preview.png)
 ````bash
 $ quarto render hello.qmd --to doxc
 ````
@@ -374,7 +374,7 @@ summary(cars)
 
 ## Rendered Output
 
-![](figures/rendering-output.png)
+![](images/rendering-output.png)
 
 
 ## YAML header
@@ -741,7 +741,7 @@ countdown(minutes = 15, seconds = 0)
 
 <!-- Start: Comparison + Demo - JAN -->
 
-# When to use Quarto? {background-opacity="0.7" background-image="img/dalle3/scale.jpeg"}
+# When to use Quarto? {background-opacity="0.7" background-image="images/dalle3/scale.jpeg"}
 
 ##  Strengths & Weaknesses of Quarto *for teaching*
 
@@ -778,7 +778,7 @@ countdown(minutes = 15, seconds = 0)
 :::: {.columns}
 
 ::: {.column width="50%"}
-![[by Scriberia for The Turing Way community (CC-BY 4.0)](https://zenodo.org/record/3695300/files/VersionControl.jpg?download=1)](img/turingway/VersionControl.jpg){width=80% fig-align="center"}
+![[by Scriberia for The Turing Way community (CC-BY 4.0)](https://zenodo.org/record/3695300/files/VersionControl.jpg?download=1)](images/turingway/VersionControl.jpg){width=80% fig-align="center"}
 :::
 
 ::: {.column .fragment width="50%"}
