@@ -1,5 +1,5 @@
 ---
-title: "How to use Quarto to create Open & Reproducible presentations"
+title: "How to use Quarto to create Open & Reproducible Presentations"
 subtitle: |
   Digital Research Academy Train the Trainer program
 
