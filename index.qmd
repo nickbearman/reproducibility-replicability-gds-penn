@@ -3,11 +3,10 @@ title: "How to use Quarto to create Open & Reproducible presentations"
 subtitle: |
   Digital Research Academy Train the Trainer program
 
-  [{{< fa brands github >}} Source](https://github.com/lnnrtwttkhn/dra-fair-teaching) |
-  [{{< fa brands internet-explorer >}}Slides](https://lennartwittkuhn.com/dra-fair-teaching/)
+  [{{< fa brands github >}} Source](https://github.com/jansim/dra-reproducible-materials) |
+  [{{< fa brands chrome >}} Slides](http://simson.io/dra-reproducible-materials/)
 
   [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
-  [![DOI](https://zenodo.org/badge/)](https://zenodo.org/badge/latestdoi/)
 authors:
   - id: bearman
     name:
@@ -805,40 +804,46 @@ countdown(minutes = 15, seconds = 0)
 ## Thank you! :pray:
 
 ::: columns
-::: {.column width="30%"}
-![](https://avatars.githubusercontent.com/u/46314469?v=4)
+::: {.column width="25%"}
+![](https://avatars.githubusercontent.com/u/6410645?v=4)
 
-#### Esther Plomp
+#### Nick Bearman
 
-{{< fa envelope >}} [e.plomp\@tudelft.nl](mailto:e.plomp@tudelft.nl)<br>
+{{< fa envelope >}} [nick\@nickbearman.com](mailto:nick@nickbearman.com)<br>
 {{< fa home-user >}}
-[estherplomp.github.io](https://estherplomp.github.io/)<br>
-{{< fa brands github >}} [GitHub](https://github.com/EstherPlomp)<br>
+[https://nickbearman.me.uk](https://nickbearman.me.uk)<br>
+{{< fa brands github >}} [GitHub](https://github.com/nickbearman)<br>
 {{< fa brands mastodon >}}
-[Mastodon](https://scholar.social/@toothFAIRy)
+[Mastodon](https://fosstodon.org/deck/@nickbearman)
 :::
 
-::: {.column width="30%"}
-![](https://avatars.githubusercontent.com/u/42233065?v=4)
+::: {.column width="25%"}
+![](https://avatars.githubusercontent.com/u/83285979?v=4)
 
-#### Lennart Wittkuhn
+#### Unai Fischer Abaigar
 
 {{< fa envelope >}}
-[lennart.wittkuhn\@uni-hamburg.de](mailto:lennart.wittkuhn@uni-hamburg.de)<br>
-{{< fa home-user >}}
-[lennartwittkuhn.com](https://lennartwittkuhn.com/)<br>
-{{< fa brands github >}} [GitHub](https://github.com/lnnrtwttkhn)<br>
-{{< fa brands mastodon >}}
-[Mastodon](https://fediscience.org/@lnnrtwttkhn)<br>
+[Unai.FischerAbaigar\@stat.uni-muenchen.de](mailto:Unai.FischerAbaigar@stat.uni-muenchen.de)<br>
+{{< fa brands github >}} [GitHub](https://github.com/unai-fa)<br>
 :::
 
-::: {.column width="40%"}
+::: {.column width="25%"}
+![](https://avatars.githubusercontent.com/u/7115629?v=4)
+
+#### Jan Simson
+
+{{< fa envelope >}}
+[hi\@simson.io](mailto:hi@simson.io)<br>
+{{< fa brands github >}} [GitHub](https://simson.io)<br>
+:::
+
+::: {.column width="25%"}
 {{< fa image >}} **Images:** [Scriberia with The Turing Way
 community](https://doi.org/10.5281/zenodo.3332807) (License: [CC BY
 4.0](https://creativecommons.org/licenses/by/4.0/))
 
 :computer: **Slides:** Slides are publicly available at
-[lennartwittkuhn.com/dra-fair-teaching](https://lennartwittkuhn.com/ddlitlab-presentation/)
+[github.com/jansim/dra-reproducible-materials](https://github.com/jansim/dra-reproducible-materials)
 
 :package: **Software:** Reproducible slides build with
 [Quarto](https://quarto.org/) and deployed to [GitHub
@@ -847,10 +852,9 @@ Actions](https://github.com/features/actions) (details in the [Quarto
 docs](https://quarto.org/docs/publishing/github-pages.html))
 
 {{< fa brands github >}} **Source:** Source code is available at
-[github.com/lnnrtwttkhn/dra-fair-teaching](https://github.com/lnnrtwttkhn/dra-fair-teaching)
+[github.com/jansim/dra-reproducible-material](github.com/jansim/dra-reproducible-material)
 
-:trackball: **DOI:**
-[10.5281/zenodo.8296951](https://zenodo.org/badge/latestdoi/682015737)
+:trackball: **DOI:** TBC
 (generated using GitHub + [Zenodo](https://zenodo.org/), see [GitHub
 docs](https://guides.github.com/activities/citable-code/))
 
@@ -859,9 +863,9 @@ International ([CC BY
 4.0](https://creativecommons.org/licenses/by/4.0/))
 
 :speech_balloon: **Contact:** We welcome any feedback via
-[email](mailto:lennart.wittkuhn@uni-hamburg.de?cc=e.plomp@tudelft.nl) or
+[email](mailto:nick@nickbearman.com?cc=Unai.FischerAbaigar@stat.uni-muenchen.de?cc=hi@simson.io) or
 [GitHub
-issues](https://github.com/lnnrtwttkhn/dra-fair-teaching/issues). Thank
+issues](https://github.com/jansim/dra-reproducible-material/issues). Thank
 you!
 :::
 :::
