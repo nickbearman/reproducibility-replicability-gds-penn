@@ -528,16 +528,6 @@ Hello...
 :::
 :::
 
-::: {.column width="30%"}
-**Interactivity**
-```{r}
-library(leaflet)
-leaflet() %>%
-  addTiles() %>%
-  addMarkers(lng=11.576124, lat=48.137154, popup="Munich")
-```
-:::
-
 ::::
 
 ## Quarto Showcase
