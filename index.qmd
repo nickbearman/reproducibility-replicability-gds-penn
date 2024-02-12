@@ -804,40 +804,31 @@ countdown(minutes = 15, seconds = 0)
 ## Thank you! :pray:
 
 ::: columns
-::: {.column width="25%"}
+::: {.column width="20%"}
 ![](https://avatars.githubusercontent.com/u/6410645?v=4)
 
-#### Nick Bearman
+#### [Nick Bearman](mailto:nick@nickbearman.com)
 
-{{< fa envelope >}} [nick\@nickbearman.com](mailto:nick@nickbearman.com)<br>
-{{< fa home-user >}}
-[https://nickbearman.me.uk](https://nickbearman.me.uk)<br>
 {{< fa brands github >}} [GitHub](https://github.com/nickbearman)<br>
-{{< fa brands mastodon >}}
-[Mastodon](https://fosstodon.org/deck/@nickbearman)
 :::
 
-::: {.column width="25%"}
+::: {.column width="20%"}
 ![](https://avatars.githubusercontent.com/u/83285979?v=4)
 
-#### Unai Fischer Abaigar
+#### [Unai Fischer Abaigar](mailto:Unai.FischerAbaigar@stat.uni-muenchen.de)
 
-{{< fa envelope >}}
-[Unai.FischerAbaigar\@stat.uni-muenchen.de](mailto:Unai.FischerAbaigar@stat.uni-muenchen.de)<br>
 {{< fa brands github >}} [GitHub](https://github.com/unai-fa)<br>
 :::
 
-::: {.column width="25%"}
+::: {.column width="20%"}
 ![](https://avatars.githubusercontent.com/u/7115629?v=4)
 
-#### Jan Simson
+#### [Jan Simson](mailto:hi@simson.io)
 
-{{< fa envelope >}}
-[hi\@simson.io](mailto:hi@simson.io)<br>
 {{< fa brands github >}} [GitHub](https://simson.io)<br>
 :::
 
-::: {.column width="25%"}
+::: {.column width="40%"}
 {{< fa image >}} **Images:** [Scriberia with The Turing Way
 community](https://doi.org/10.5281/zenodo.3332807) (License: [CC BY
 4.0](https://creativecommons.org/licenses/by/4.0/))
@@ -852,7 +843,7 @@ Actions](https://github.com/features/actions) (details in the [Quarto
 docs](https://quarto.org/docs/publishing/github-pages.html))
 
 {{< fa brands github >}} **Source:** Source code is available at
-[github.com/jansim/dra-reproducible-material](github.com/jansim/dra-reproducible-material)
+[github.com/jansim/dra-reproducible-materials](https://github.com/jansim/dra-reproducible-materials)
 
 :trackball: **DOI:** TBC
 (generated using GitHub + [Zenodo](https://zenodo.org/), see [GitHub
@@ -863,9 +854,9 @@ International ([CC BY
 4.0](https://creativecommons.org/licenses/by/4.0/))
 
 :speech_balloon: **Contact:** We welcome any feedback via
-[email](mailto:nick@nickbearman.com?cc=Unai.FischerAbaigar@stat.uni-muenchen.de?cc=hi@simson.io) or
+[email](mailto:nick@nickbearman.com,Unai.FischerAbaigar@stat.uni-muenchen.de,hi@simson.io) or
 [GitHub
-issues](https://github.com/jansim/dra-reproducible-material/issues). Thank
+issues](https://github.com/jansim/dra-reproducible-materials/issues). Thank
 you!
 :::
 :::
