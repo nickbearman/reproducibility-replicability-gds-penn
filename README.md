@@ -1,7 +1,8 @@
 # How to use Quarto to create Open & Reproducible Presentations
 
 [![Quarto Publish](https://github.com/lnnrtwttkhn/dra-fair-teaching/actions/workflows/publish.yml/badge.svg)](https://github.com/lnnrtwttkhn/dra-fair-teaching/actions/workflows/publish.yml)
-[![DOI](https://zenodo.org/badge/682015737.svg)](https://zenodo.org/badge/latestdoi/682015737)
+[![DOI](https://zenodo.org/badge/754060284.svg)](https://zenodo.org/doi/10.5281/zenodo.10652968)
+
 
 ## About
 
