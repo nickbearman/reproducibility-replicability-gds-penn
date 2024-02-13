@@ -845,7 +845,7 @@ docs](https://quarto.org/docs/publishing/github-pages.html))
 {{< fa brands github >}} **Source:** Source code is available at
 [github.com/jansim/dra-reproducible-materials](https://github.com/jansim/dra-reproducible-materials)
 
-:trackball: **DOI:** TBC
+:trackball: **DOI:** [![DOI](https://zenodo.org/badge/754060284.svg)](https://zenodo.org/doi/10.5281/zenodo.10652968)
 (generated using GitHub + [Zenodo](https://zenodo.org/), see [GitHub
 docs](https://guides.github.com/activities/citable-code/))
 
