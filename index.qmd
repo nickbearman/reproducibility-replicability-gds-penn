@@ -7,6 +7,7 @@ subtitle: |
   [{{< fa brands chrome >}} Slides](http://simson.io/dra-reproducible-materials/)
 
   [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+  [![DOI](https://zenodo.org/badge/754060284.svg)](https://zenodo.org/doi/10.5281/zenodo.10652968)
 authors:
   - id: bearman
     name:
