@@ -1,31 +1,37 @@
 {
     "creators": [
         {
-            "orcid": "0000-0003-3625-1357",
-            "affiliation": "Delft University of Technology, Faculty of Applied Sciences",
-            "name": "Plomp, Esther"
+            "orcid": "0000-0002-8396-4061",
+            "affiliation": "GIS Trainer and Consultant",
+            "name": "Nick Bearman"
         },
         {
-            "orcid": "0000-0003-2966-6888",
-            "affiliation": "University of Hamburg",
-            "name": "Wittkuhn, Lennart"
+            "orcid": "0000-0003-4893-2547",
+            "affiliation": "LMU Munich",
+            "name": "Unai Fischer Abaigar"
+        },
+        {
+            "orcid": "0000-0002-9406-7761",
+            "affiliation": "LMU Munich",
+            "name": "Jan Simson"
+        }
     ],
 
     "license": "cc-by-4.0",
 
-    "title": "Reproducible and FAIR Teaching Materials",
+    "title": "How to use Quarto to create Open & Reproducible Presentations",
 
     "keywords": [
       "FAIR",
-      "Reproducibility"
+      "Reproducibility",
+      "Quarto",
       "Version Control",
       "Git",
       "GitHub",
       "Quarto",
-      "Zenodo"
+      "Zenodo",
       "Open Science",
       "Education",
       "Teaching"
-    ],
-
+    ]
 }

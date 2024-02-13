@@ -3,28 +3,31 @@
 
 cff-version: 1.2.0
 title: >-
-  Reproducible and FAIR Teaching Materials
+  How to use Quarto to create Open & Reproducible Presentations
 message: >-
   If you use this software, please cite it using these
   metadata.
 type: software
 authors:
-  - family-names: Plomp
-    given-names: Esther
-    orcid: '0000-0003-3625-1357'
-  - family-names: Wittkuhn
-    given-names: Lennart
-    orcid: 'https://orcid.org/0000-0003-2966-6888'
-repository-code: 'https://github.com/lnnrtwttkhn/dra-fair-teaching'
+  - family-names: Bearman
+    given-names: Nick
+    orcid: '0000-0002-8396-4061'
+  - family-names: Fischer Abaigar
+    given-names: Unai
+    orcid: '0000-0003-4893-2547'
+  - family-names: Simson
+    given-names: Jan
+    orcid: '0000-0002-9406-7761'
+repository-code: 'https://github.com/jansim/dra-reproducible-materials'
 url: >-
-  https://lennartwittkuhn.com/dra-fair-teaching
+  simson.io/dra-reproducible-materials/
 keywords:
   - FAIR
   - Reproducibility
+  - Quarto
   - Version Control
   - Git
   - GitHub
-  - Quarto
   - Zenodo
   - Open Science
   - Education
@@ -32,4 +35,4 @@ keywords:
   - Digital Research Academy
 license: CC-BY-4.0
 version: 1.0
-date-released: '2023-08-29'
+date-released: '2024-02-13'
