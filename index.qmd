@@ -786,7 +786,16 @@ countdown(minutes = 15, seconds = 0)
 
 - Let's check out [these slides right here](https://github.com/jansim/dra-reproducible-materials/)
 - Course Alumni
-  - ...Your name here?
+  - Anandhi
+  - Elen
+  - Fritjof
+  - Heidi
+  - Helene
+  - Sarah
+  - Sven
+  - Tina
+  - Vinodh
+  - Yeganeh
 
 ## Additional Resources
 
