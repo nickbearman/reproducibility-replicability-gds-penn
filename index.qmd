@@ -607,6 +607,7 @@ filtered = data.filter(function(penguin) {
 - We will be using Posit.cloud (Rstudio.cloud) after the break
 - If you don't have an account, please set one up in the break
 - I will be around if you have questions
+- Poll - who has used R or RStudio before (even just a little bit)? Yes | No
 
 # During the Break:
 
@@ -641,8 +642,6 @@ countdown(minutes = 8, seconds = 0)
 - Then I will split the group into breakout rooms (3-4 per room) and you can try it yourselves (for about 15 min). 
 
 - Instructions are on the next slides
-
-- Poll - who has used R or RStudio before (even just a little bit)? Yes | No
 
 ## Demo 1
 
