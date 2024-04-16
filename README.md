@@ -2,7 +2,7 @@
 
 ## About
 
-Slides for presentation on "Reproducibility and Replicability in Geospatial Data Science" by Nick Bearman on 18 April 2024.
+Slides for presentation on "Reproducibility and Replicability in Geospatial Data Science" by Nick Bearman on 18 April 2024. Available at [https://nickbearman.github.io/reproducibility-replicability-gds-penn](https://nickbearman.github.io/reproducibility-replicability-gds-penn).
 
 ## Requirements
 
