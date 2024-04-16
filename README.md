@@ -1,16 +1,8 @@
-# How to use Quarto to create Open & Reproducible Presentations
-
-[![Quarto Publish](https://github.com/lnnrtwttkhn/dra-fair-teaching/actions/workflows/publish.yml/badge.svg)](https://github.com/lnnrtwttkhn/dra-fair-teaching/actions/workflows/publish.yml)
-[![DOI](https://zenodo.org/badge/754060284.svg)](https://zenodo.org/doi/10.5281/zenodo.10652968)
-
+# Reproducibility and Replicability in Geospatial Data Science
 
 ## About
 
-Slides for presentation on "How to use Quarto to create Open & Reproducible Presentations" by Nick Bearman, Unai Fischer Abaigar and Jan Simson on 13 February 2024.
-
-Prepared for the [Digital Research Academy](https://digital-research.academy/) [train-the-trainer program](https://gitlab.com/digital-research-academy/dra-train-the-trainer).
-
-Adapted from the slides for a talk on "Reproducible & FAIR Teaching Materials" by Esther Plomp and Lennart Wittkuhn.
+Slides for presentation on "Reproducibility and Replicability in Geospatial Data Science" by Nick Bearman on 18 April 2024.
 
 ## Requirements
 
