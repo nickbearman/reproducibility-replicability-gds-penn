@@ -42,13 +42,9 @@ format:
 ::: {.fragment}
 
 - What is reproducibility and replicability?
-
-- Summarise FAIR principles and reproducible research (Nick)
-- Talk about Quarto, one tool in your toolkit (Unai)
-- Make a presentation in Quarto (Nick & you)
-- Compare PowerPoint and Quarto (Jan)
-- Demo creating and updating slides in realtime using GitHub Actions (Jan)
-- Questions (you)
+- Why do it?
+- How do we do it?
+- Questions
 
 :::
 
