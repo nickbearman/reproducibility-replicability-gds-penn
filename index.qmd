@@ -1,13 +1,11 @@
 ---
-title: "How to use Quarto to create Open & Reproducible Presentations"
+title: "Reproducibility and Replicability in Geospatial Data Science"
 subtitle: |
-  Digital Research Academy Train the Trainer program
 
-  [{{< fa brands github >}} Source](https://github.com/jansim/dra-reproducible-materials) |
-  [{{< fa brands chrome >}} Slides](http://simson.io/dra-reproducible-materials/)
+  [{{< fa brands github >}} Source](https://github.com/nickbearman/reproducibility-replicability-gds-penn) |
+  [{{< fa brands chrome >}} Slides]()
 
   [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
-  [![DOI](https://zenodo.org/badge/754060284.svg)](https://zenodo.org/doi/10.5281/zenodo.10652968)
 authors:
   - id: bearman
     name:
@@ -20,28 +18,7 @@ authors:
     attributes:
       corresponding: boolean
       equal-contributor: true
-  - id: fischer abaigar    
-    name:
-      given: Unai
-      family: Fischer Abaigar
-      literal: Unai Fischer Abaigar
-    email: Unai.FischerAbaigar@stat.uni-muenchen.de
-    orcid: 0000-0003-4893-2547
-    attributes:
-      corresponding: boolean
-      equal-contributor: true
-  - id: simson
-    name:
-      given: Jan
-      family: Simson
-      literal: Jan Simson
-    url: https://simson.io
-    email: hi@simson.io
-    orcid: 0000-0002-9406-7761
-    attributes:
-      corresponding: boolean
-      equal-contributor: true
-date: "2024-02-13"
+date: "2024-04-18"
 date-format: long
 from: markdown+emoji
 format:
@@ -64,6 +41,8 @@ format:
 
 ::: {.fragment}
 
+- What is reproducibility and replicability?
+
 - Summarise FAIR principles and reproducible research (Nick)
 - Talk about Quarto, one tool in your toolkit (Unai)
 - Make a presentation in Quarto (Nick & you)
@@ -73,24 +52,85 @@ format:
 
 :::
 
-
-
-## Our Target Audience
-
-- Familiar with FAIR principles and reproducible research 
-- Not familiar with doing it in practice
-- *Preaching to the choir*
-
 ::: {.fragment}
 
 ### Learning objectives 
 
-- You can create reproducible teaching materials collaboratively using tools like Quarto and Git(Hub)
-- You will do some of this today, and know where to go to develop your skills
+- Understand what reproducibility and replicability are
+- Know why they are useful
+- Be aware of some of the tools that you can use 
 
 :::
 
-## What are FAIR Principles?
+## What is Reproducibility?
+
+- Ability for other people *with a similar level of skill* to reproduce your work. 
+
+- Other people
+  - colleagues in company, 
+  - group members in a project,
+  - yourself in a year when you want to use your project work for something else,
+
+- Fundamental part of research
+
+- Also is best practice - which will allow others to reproduce your work. 
+
+## Why do it?
+
+- We need to have confidence that our research is good quality and we are doing good science
+
+- Peter Fisher, Uni of Leicteser UK (1993) compared seven different pieces of GIS software doing a viewshed analysis
+
+- and got seven (slightly) different results!
+
+![](images/fisher-1993-fig8.png)
+
+## Why do it?
+ 
+- Fisher also discovered a major error in one piece of software which gave completely incorrect results.
+
+- Highlights the need for:
+
+  - Standards & testing to make sure this doesn't happen
+  - Algorithms used to be published so people can see what is happening
+  - Issues when only binary files are available, and not the source code
+
+Fisher, P. F. (1993). Algorithm and implementation uncertainty in viewshed analysis. International Journal of Geographical Information Systems, 7(4), 331–347. https://doi.org/10.1080/02693799308901965
+
+## Why do it?
+
+- Riggs & Dean, Colorado State (2007) did a similar investigation on viewshed analysis
+
+- Things have improved since 1993, but there are still differences in different software. 
+
+Riggs, P.D. and Dean, D.J. (2007), An Investigation into the Causes of Errors and Inconsistencies in Predicted Viewsheds. Transactions in GIS, 11: 175-196. https://doi.org/10.1111/j.1467-9671.2007.01040.x
+
+## Why do it?
+
+- Standards & testing to make sure this doesn't happen
+  - OGC
+  - But we probably do need more testing
+  
+- Algorithms used to be published so people can see what is happening
+  - Publish algorithms in journals
+  - Even more important with machine learning - transparency is important
+  
+- Issues when only binary files are available, and not the source code
+  - Growth in open source software - so you can see (and unpick) what is happening
+
+
+## What is Reproducibility & Replicability?
+
+*"\[...\] when the same analysis steps performed on the same dataset
+\[...\] produce the same answer."* ([Turing
+Way](https://the-turing-way.netlify.app/reproducible-research/overview/overview-definitions))
+
+![[by Scriberia for The Turing Way community (CC-BY
+4.0)](https://zenodo.org/record/3678226/files/ReproducibleDefinitionGrid.jpg?download=1)](https://zenodo.org/record/3678226/files/ReproducibleDefinitionGrid.jpg?download=1){width="50%"
+fig-align="center"}
+
+
+## How do we make our research reproducible? - **FAIR**:
 
 ::: columns
 :::: {.column width="50%"}
@@ -102,7 +142,7 @@ format:
 
 **Accessible**
 
-- Data could be openly available OR access via authentication and if needed
+- Code/data could be openly available OR access via authentication and if needed
 
 **Interoperable**
 
@@ -127,157 +167,134 @@ fig-align="center"}
 
 :::
 
-## How does FAIR apply to teaching materials?
+## Research
 
-::: columns
-::: {.column width="42%"}
-::: {.fragment}
+- Some journals & conferences ask you to submit code along with your paper
 
-#### Findable/Accessible
+- AGILE - https://reproducible-agile.github.io/
 
-- Share your slides/materials on a data repository to receive a DOI and ensure long term preservation
-- Share your materials via a journal article
-- Share your materials in a training material registry
+- Anyone (with a similar level of skills) should be able to do reproduce your research and benefit from it. 
 
-:::
-:::
+- One reason for open source tools.
+	
+- If you do analysis in ArcGIS Pro, you need ArcGIS Pro to recreate that analysis. 
+	
+- If you don't have ArcGIS Pro, what do you do?
 
-::: {.column width="58%"}
-::: {.fragment}
 
-#### Interoperable
+## It's not just research
 
-- Use commonly used formats (PowerPoint / Word) or open formats such as Markdown or Quarto documents (PDF)
-- Use common terminology
-- Integrate with other resources where possible
+Other work can be useful if it can be reproducible:
 
-:::
+- quarterly or annual reports
 
-::: {.fragment}
+- repeating work over 200 areas, 50 business units, 365 days,
 
-#### Reusable
+- coming back to your work 6 months later - "please can you update this with this new data?"
 
-- Add documentation
-- Add metadata
-- Share under an Open License such as CC-BY
 
-:::
-:::
-:::
+## How do we do this?
 
-## What is Reproducibility?
+- Documenting what you did is standard - Methods
 
-*"\[...\] when the same analysis steps performed on the same dataset
-\[...\] produce the same answer."* ([Turing
-Way](https://the-turing-way.netlify.app/reproducible-research/overview/overview-definitions))
+- If you can do what you did in a script, then you can also share this
 
-![[by Scriberia for The Turing Way community (CC-BY
-4.0)](https://zenodo.org/record/3678226/files/ReproducibleDefinitionGrid.jpg?download=1)](https://zenodo.org/record/3678226/files/ReproducibleDefinitionGrid.jpg?download=1){width="50%"
-fig-align="center"}
+- ArcGIS Pro / QGIS
+  - graphical interface, click buttons, etc
+  
+- R / Python
+  - write out the script
 
-## How does reproducibility apply to teaching materials?
+## Setup - "environments"
 
-Comes close to the Interoperability and Reusable principles:
+- To replicate a piece of work, you need to know what software they used
 
-- Integrating materials (minimise duplication)
-- Formatting
-- Software/code
-- Similar learning goals/objectives and outcomes
+- What version
 
-::: fragment
+- What libraries / packages
 
-### Practice what you preach!
+- What version of libraries or packages
 
-By setting up your teaching materials in a reproducible manner, you demonstrate the value of reproducibility directly
+- Can record this in text
+  - "R 4.3.2, RStudio 2013.12.0, sf library 1.0-16" etc.  
 
-- Useful for others
-- Useful for future you when you teach this course again
+- Or in code
+  - renv library https://rstudio.github.io/renv/articles/renv.html
+  
+## Setup - Docker
 
-:::
+- Docker gives you a big box to put all this in
 
-## FAIR and reproducible training materials are beneficial to you!
+- Then you say - I used this Docker environment
 
-::: columns
-::: {.column width="50%"}
+- AGILE has a very nice overview
 
-- Information sheets saves time in sharing information
-- Clear communication (or you can update the information!)
-- Saves time in on-boarding/re-using materials
-- Preserved & Findable
-- Easy to share within and outside your team
-- Provides you and collaborators with credit (visibility, DOI, citations)
+## Version Control
 
-:::
+- If your project evolves over time, you may need to use version control
 
-::: {.column width="50%"}
+- Provides a snapshot of your code at a specific point in time - I used this version of my code
 
-![[by Scriberia for The Turing Way community (CC-BY
-4.0)](https://zenodo.org/record/5706310/files/recognition.jpg?download=1)](https://zenodo.org/record/5706310/files/recognition.jpg?download=1){width="80%"
-fig-align="center"}
+- Version Control (Git) allows you to do this, while still developing your code, and to see the differences (diff). 
 
-:::
-:::
+- GitHub allows you to collaborate with other people on this.
 
-## FAIR and reproducible training materials are beneficial to us!
 
-::: columns
+## Writing, Presentations
 
-- FAIR and reproducible training materials are beneficial to Nick, Jan and Unai :grinning:
-- *We used the [Reproducible and FAIR Teaching Materials](https://osf.io/gj6hd) slides from the Aug 2023 Train the Trainer programme*
-- **Thank you** very much to Esther Plomp and Lennart Wittkuhn :pray: whose [Quarto](https://github.com/jansim/dra-reproducible-materials) slides we used and developed!
+Also works for writing and presentations as well.
 
-::: {.column width="30%"}
+- Markdown allows you to write plan text with tags - stars, hashes, etc.
 
-![](https://avatars.githubusercontent.com/u/46314469?v=4)
+- Can also do analysis in this
 
-#### Esther Plomp
+- LaTeX is a developved version of Markdown (or Markdown is a simple version of LaTeX)
 
-{{< fa envelope >}} [e.plomp@tudelft.nl](mailto:e.plomp@tudelft.nl)<br>
-{{< fa home-user >}} [estherplomp.github.io](https://estherplomp.github.io/)<br>
-{{< fa brands github >}} [GitHub](https://github.com/EstherPlomp)<br>
-{{< fa brands mastodon >}} [Mastodon](https://scholar.social/@toothFAIRy)
+- RMarkdown allows you to run R code
 
-:::
+- Quarto allows you to run other code (Python, R, etc.)
 
-::: {.column width="30%"}
-![](https://avatars.githubusercontent.com/u/42233065?v=4)
+- This presentation is written in Quarto.
 
-#### Lennart Wittkuhn
 
-{{< fa envelope >}} [lennart.wittkuhn@uni-hamburg.de](mailto:lennart.wittkuhn@uni-hamburg.de)<br>
-{{< fa home-user >}} [lennartwittkuhn.com](https://lennartwittkuhn.com/)<br>
-{{< fa brands github >}} [GitHub](https://github.com/lnnrtwttkhn)<br>
-{{< fa brands mastodon >}} [Mastodon](https://fediscience.org/@lnnrtwttkhn)<br>
+## Markdown example
 
-:::
-::: {.column width="40%"}
 
-![[by Scriberia for The Turing Way community (CC-BY
-4.0)](https://zenodo.org/record/5706310/files/recognition.jpg?download=1)](https://zenodo.org/record/5706310/files/recognition.jpg?download=1){width="80%"
-fig-align="center"}
+| Syntax |  Output       |
+|------------------|-----------------------|
+| `*Italic*`       | *Italic*              |
+| `**Bold**`       | **Bold**              |
+| `~~strikethrough~~`     | ~~strikethrough~~    |
+| `[Link](url)`    | [Link](https://example.com) |
+| `i\hbar \frac{\partial \Psi}{\partial t} = -\frac{\hbar^2}{2m} \nabla^2 \Psi + V(\mathbf{r},t) \Psi` | $i\hbar \frac{\partial \Psi}{\partial t} = -\frac{\hbar^2}{2m} \nabla^2 \Psi + V(\mathbf{r},t) \Psi$|
 
-:::
-:::
 
-## Outline
 
-- ~~Summarise FAIR principles and reproducible research (Nick)~~
-- Talk about Quarto, one tool in your toolkit (Unai)
-- *break*
-- Show you how to make a presentation in Quarto (Nick)
-- Compare PowerPoint and Quarto (Jan)
-- Demo creating and updating slides in realtime using GitHub Actions (Jan)
-- Questions (you)
+## Markdown example
 
-<!-- End: Intro (to FAIR) - NICK -->
+- Markdown allows you to write plan text with tags - stars, hashes, etc. 
 
-<!-- Begin: Quarto Intro & Syntax - UNAI -->
+````{.markdown}
+---
+title: "My document"
+format: html
+---
+. . .
+# Introduction
 
-# What is Quarto?
+*Hello Quarto!*
+
+```{{r}}
+summary(cars)
+```
+````
+
+## Rendered Output
+
+![](images/rendering-output.png)
 
 ## About Quarto
 
-::: incremental
 -   [Quarto](https://quarto.org/) is a new, open-source, scientific and
     technical publishing system
 -  Combine text and code to produce formatted documents
@@ -286,36 +303,27 @@ fig-align="center"}
 -   Multi-language support for R, Python, Julia, and more
 -   Quarto extends [RMarkdown](https://rmarkdown.rstudio.com/) and
     shares similarities with [Juypter Notebooks](https://jupyter.org/).
-:::
 
 ![[Artwork from "Hello, Quarto" keynote by Julia Lowndes and Mine Çetinkaya-Rundel, presented at RStudio Conference 2022. Illustrated by Allison Horst.](https://allisonhorst.com/cetinkaya-rundel-lowndes-quarto-keynote)](https://cdn.myportfolio.com/45214904-6a61-4e23-98d6-b140f8654a40/c2ef45f1-4a68-4c7a-a43f-bdcf0f90e104_rw_3840.png?h=783eba914284e5adfb9feadcf4ba5f1e){width=70%}
 
 ## Formats
 
-::: incremental
 - **Documents**: HTML, PDF, MS Word, Open Office, ePub
 - **Presentations**: Revealjs, PowerPoint, 
 - **Wikis**: MediaWiki, JiraWiki, ...
 - Many templates exist for academic documents: [quarto-journals](https://github.com/quarto-journals/)
 - And much more: Jupyter, RTF, InDesign, ...
-:::
 
 
 ::: columns
 ::: {.column width="30%"}
-::: {.fragment}
 ![[taken from quarto-journals](https://github.com/quarto-journals/)](images/journal.png)
 :::
-:::
 ::: {.column width="30%"}
-::: {.fragment}
 ![[taken from quarto gallery](https://quarto.org/docs/gallery/)](images/presentations-penguins-story.png)
 :::
-:::
 ::: {.column width="30%"}
-::: {.fragment}
 ![[taken from quarto gallery](https://quarto.org/docs/gallery/)](images/books-mlr3book.png)
-:::
 :::
 :::
 
@@ -353,61 +361,6 @@ $ quarto render hello.qmd --to doxc
 
 
 
-
-## A .qmd (and .rmd) file
-
-
-````{.markdown}
----
-title: "My document"
-format: html
----
-. . .
-# Introduction
-
-*Hello Quarto!*
-
-```{{r}}
-summary(cars)
-```
-````
-
-## Rendered Output
-
-![](images/rendering-output.png)
-
-
-## YAML header
-::: columns
-::: {.column width="50%"}
-
-````{.markdown code-line-numbers="1-4|6-10|11-13|14-17|19"}
----
-title: "My document"
-author: John Doe
-date: today
-
-format:
-  html:
-    toc: true
-engine: knitr
-
-execute:
-  echo: false
-
-params:
-  year: 2023
-  country: "Germany"
-  alpha: 0.05
-
-# bibliography: references.bib
----
-````
-:::
-::: {.column width="50%"}
-Rich set of rendering options for Pandoc, Quarto and Knitr
-:::
-:::
 
 ## Markdown text
 
@@ -589,150 +542,9 @@ filtered = data.filter(function(penguin) {
 })
 ```
 
-<!-- End: Quarto Intro & Syntax - UNAI -->
-
-<!-- Start: Rstudio.cloud Practical (incl. Signup + Break) - NICK -->
-
-## Outline
-
-- ~~Summarise FAIR principles and reproducible research (Nick)~~
-- ~~Talk about Quarto, one tool in your toolkit (Unai)~~
-- *break*
-- Show you how to make a presentation in Quarto (Nick)
-- Compare PowerPoint and Quarto (Jan)
-- Demo creating and updating slides in realtime using GitHub Actions (Jan)
-- Questions (you)
-
-# Posit.cloud
-
-- We will be using Posit.cloud (Rstudio.cloud) after the break
-- If you don't have an account, please set one up in the break
-- I will be around if you have questions
-- Poll - who has used R or RStudio before (even just a little bit)? Yes | No
-
-# During the Break:
-
-- Go to [https://login.posit.cloud/](https://login.posit.cloud/)
-- Click **Sign Up** ![](images/sign-up.png){ height=30 }
-- *fill out form*
-- Click **Sign Up**
-- Choose **Posit Cloud** ![](images/posit-cloud.png){ height=30 }
-- *verify email in your inbox*  
-
-![](images/posit-cloud-verify-email.png){ height=200 }
-
-- click **Continue**
-
-- Click **New Project -> New RStudio Project** 
-
-- It should look like the image in the top right!
-
-![](images/new-rstudio-project.png){.absolute bottom="0" left="450" width="200"}
-
-![](images/rstudio-window.png){.absolute top="0" right="0" width="600"}
-
-```{r}
-library(countdown)
-countdown(minutes = 8, seconds = 0)
-```
-
-## Creating a Quarto slidedeck
-
-- I will do a short demo (~4 min) about creating and updating a Quarto slide deck in RStudio Cloud. You do **not** need to follow along. 
-
-- Then I will split the group into breakout rooms (3-4 per room) and you can try it yourselves (for about 15 min). 
-
-- Instructions are on the next slides
-
-## Demo 1
-
-- This is your RStudio window:
-
-![](images/rstudio-window.png)
-
-## Demo 2
-
-- Choose:	File > New File > Quarto Presentation...
-
-![](images/file-new.png){ width="400" }
-	
-- give it a title, e.g. "Presentation"
-	
-- click **Create**
-
-- this is your presentation
-
-![](images/presentation.png){ width="600" }
-
-
-## Demo 3
-
-- We are in **Visual** mode - you can type in and see changes in real time. 
-
-- Slide list is on the right. 
-
-- To add a slide, type in some text. 
-
-- Set it to **Header 2** - you will see it appear in the list. 
-
-- Can do **Visual** mode or **Source** mode.
-
-![](images/source-visual.png){ height=30 }
-
-- You can make changes in either and both will update. 
-
-![](images/source.png)
-
-## Demo 4
-
-- To see the slides we need to **Render**
-
-- This converts the Quarto code to slides you can look and and share (in HTML, you can also export as PDF). 
-
-- Before we do this, we have an issue:
-
-![](images/rmarkdown.png){ height=30 }
-
-- Click **Install** to install the library. 
-
-- Then click ![](images/redner.png){ height=30 }
-
-- Slides will open in a new window. 
-
-## Now try on your own!
-
-- Any questions before we start?
-
-- Then I will split the group into breakout rooms (3-4 per room) and you can try it yourselves. You have ~15 min. 
-
-- Try some of the codes Unai introduced
-
-- Check out these links for more ideas:
-
-  - [https://quarto.org/docs/get-started/hello/rstudio.html](https://quarto.org/docs/get-started/hello/rstudio.html)
-	- [https://quarto.org/docs/presentations/](https://quarto.org/docs/presentations/)
-
-- You can do this on RStudio Cloud or your own copy of RStudio
-
-  - You will need to download and install Quarto CLI:
-
-  - [https://quarto.org/docs/get-started/](https://quarto.org/docs/get-started/)
-	
-  - Can also run in VS Code, Jupyter, Neovim or Text Editor
-
-
-```{r}
-library(countdown)
-countdown(minutes = 15, seconds = 0)
-```
-
-<!-- End: Rstudio.cloud Practical (incl. Signup + Break) - NICK -->
-
-<!-- Start: Comparison + Demo - JAN -->
-
 # When to use Quarto? {background-opacity="0.7" background-image="images/dalle3/scale.jpeg"}
 
-##  Strengths & Weaknesses of Quarto *for teaching*
+##  Strengths & Weaknesses of Quarto *for slides*
 
 :::: {.columns}
 
@@ -775,42 +587,27 @@ countdown(minutes = 15, seconds = 0)
 - Going back through time
 - Great for collaboration
 - Allow sharing and adaptation
-  - Just like [this presentation](https://github.com/jansim/dra-reproducible-materials/)
+  - Just like [this presentation](https://github.com/nickbearman/reproducibility-replicability-gds-penn)
 - Allows automation
 
 :::
 
 ::::
 
-## Demo: Course Alumni 🎉
 
-- Let's check out [these slides right here](https://github.com/jansim/dra-reproducible-materials/)
-- Course Alumni
-  - Anandhi
-  - Elen
-  - Fritjof
-  - Heidi
-  - Helene
-  - Sarah
-  - Sven
-  - Tina
-  - Vinodh
-  - Yeganeh
+### Practice what you preach!
 
-## Additional Resources
+By setting up your teaching materials in a reproducible manner, you demonstrate the value of reproducibility directly
 
-- [The Turing Way handbook to reproducible, ethical and collaborative data science](https://the-turing-way.netlify.app)
-- Richard McElreath (2020). [Science as amateur software development](https://www.youtube.com/watch?v=zwRdO9_GGhY). YouTube
-- Quarto
-  - [Quarto Documentation](https://quarto.org/docs/guide/)
-  - [Quarto for Academics](https://quarto.org/docs/blog/posts/2023-05-22-quarto-for-academics/) by Mine Çetinkaya-Rundel
-- Version Control
-  - [Version Control Book](https://lennartwittkuhn.com/version-control-book)
-  - https://github.com/git-guides
+- Useful for others
+- Useful for future you when you teach this course again
 
-<!-- End: Comparison + Demo - JAN -->
 
-## Thank you! :pray:
+## Reproducible training materials are beneficial to us!
+
+- *I used some slides from a workshop I took part in on reproducible materials, which we developed:*
+
+
 
 ::: columns
 ::: {.column width="20%"}
@@ -867,5 +664,102 @@ International ([CC BY
 [GitHub
 issues](https://github.com/jansim/dra-reproducible-materials/issues). Thank
 you!
+:::
+:::
+
+## Reproducible training materials are beneficial to us!
+
+::: columns
+- *We used the [Reproducible and FAIR Teaching Materials](https://osf.io/gj6hd) slides from the Aug 2023 Train the Trainer programme*
+- **Thank you** very much to Esther Plomp and Lennart Wittkuhn :pray: whose [Quarto](https://github.com/jansim/dra-reproducible-materials) slides we used and developed!
+
+::: {.column width="30%"}
+
+![](https://avatars.githubusercontent.com/u/46314469?v=4)
+
+#### Esther Plomp
+
+{{< fa envelope >}} [e.plomp@tudelft.nl](mailto:e.plomp@tudelft.nl)<br>
+{{< fa home-user >}} [estherplomp.github.io](https://estherplomp.github.io/)<br>
+{{< fa brands github >}} [GitHub](https://github.com/EstherPlomp)<br>
+{{< fa brands mastodon >}} [Mastodon](https://scholar.social/@toothFAIRy)
+
+:::
+
+::: {.column width="30%"}
+![](https://avatars.githubusercontent.com/u/42233065?v=4)
+
+#### Lennart Wittkuhn
+
+{{< fa envelope >}} [lennart.wittkuhn@uni-hamburg.de](mailto:lennart.wittkuhn@uni-hamburg.de)<br>
+{{< fa home-user >}} [lennartwittkuhn.com](https://lennartwittkuhn.com/)<br>
+{{< fa brands github >}} [GitHub](https://github.com/lnnrtwttkhn)<br>
+{{< fa brands mastodon >}} [Mastodon](https://fediscience.org/@lnnrtwttkhn)<br>
+
+:::
+::: {.column width="40%"}
+
+![[by Scriberia for The Turing Way community (CC-BY
+4.0)](https://zenodo.org/record/5706310/files/recognition.jpg?download=1)](https://zenodo.org/record/5706310/files/recognition.jpg?download=1){width="80%"
+fig-align="center"}
+
+:::
+:::
+
+
+## Additional Resources
+
+- [The Turing Way handbook to reproducible, ethical and collaborative data science](https://the-turing-way.netlify.app)
+- Richard McElreath (2020). [Science as amateur software development](https://www.youtube.com/watch?v=zwRdO9_GGhY). YouTube
+- Quarto
+  - [Quarto Documentation](https://quarto.org/docs/guide/)
+  - [Quarto for Academics](https://quarto.org/docs/blog/posts/2023-05-22-quarto-for-academics/) by Mine Çetinkaya-Rundel
+- Version Control
+  - [Version Control Book](https://lennartwittkuhn.com/version-control-book)
+  - https://github.com/git-guides
+
+## Thank you! :pray:
+
+::: columns
+::: {.column width="20%"}
+![](https://avatars.githubusercontent.com/u/6410645?v=4)
+
+#### [Nick Bearman](mailto:nick@nickbearman.com)
+
+{{< fa brands github >}} [GitHub](https://github.com/nickbearman)<br>
+:::
+
+::: {.column width="40%"}
+{{< fa image >}} **Images:** [Scriberia with The Turing Way
+community](https://doi.org/10.5281/zenodo.3332807) (License: [CC BY
+4.0](https://creativecommons.org/licenses/by/4.0/))
+
+:computer: **Slides:** Slides are publicly available at
+[github.com/jansim/dra-reproducible-materials](https://github.com/jansim/dra-reproducible-materials)
+
+:package: **Software:** Reproducible slides build with
+[Quarto](https://quarto.org/) and deployed to [GitHub
+Pages](https://pages.github.com/) using [GitHub
+Actions](https://github.com/features/actions) (details in the [Quarto
+docs](https://quarto.org/docs/publishing/github-pages.html))
+
+{{< fa brands github >}} **Source:** Source code is available at
+[Github.com/nickbearman/reproducibility-replicability-gds-penn](https://github.com/nickbearman/reproducibility-replicability-gds-penn)
+
+{{< fa scale-balanced >}} **License:** Creative Commons Attribution 4.0
+International ([CC BY
+4.0](https://creativecommons.org/licenses/by/4.0/))
+
+:speech_balloon: **Contact:** We welcome any feedback via
+[email](mailto:nick@nickbearman.com) or
+[GitHub
+issues](https://github.com/nickbearman/reproducibility-replicability-gds-penn/issues). Thank
+you!
+:::
+
+::: {.column width="20%"}
+
+## Questions ?
+
 :::
 :::
